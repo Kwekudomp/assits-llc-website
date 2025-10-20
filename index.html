@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assits LLC - Vm3 Purifier Distributor</title>
+    <title>Assits LLC - Vm³ Purifier Distributor | Professional Odour Control Solutions</title>
     <style>
         * {
             margin: 0;
@@ -63,7 +63,7 @@
         .hero {
             background: linear-gradient(135deg, #1e7e34 0%, #28a745 100%);
             color: white;
-            padding: 100px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
         
@@ -88,353 +88,370 @@
             text-decoration: none;
             border-radius: 30px;
             font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s;
         }
         
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transform: scale(1.05);
         }
         
         /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 60px 20px;
         }
         
-        /* Section */
-        section {
-            padding: 80px 20px;
-        }
-        
-        section h2 {
+        /* Section Titles */
+        .section-title {
             text-align: center;
             font-size: 2.5rem;
             margin-bottom: 50px;
             color: #1e7e34;
         }
         
-        /* Products Grid */
+        /* Products Section */
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
-            margin-top: 40px;
+            margin-bottom: 60px;
         }
         
         .product-card {
             background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
         }
         
         .product-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
         }
         
-        .product-image {
-            width: 100%;
-            height: 350px;
-            background: #f5f5f5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        
-        .product-image img {
-            width: 100%;
-            height: 100%;
+        .product-card img {
+            max-width: 100%;
+            height: 300px;
             object-fit: contain;
-            padding: 20px;
-        }
-        
-        .product-info {
-            padding: 25px;
-        }
-        
-        .product-info h3 {
-            color: #1e7e34;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-        
-        .product-info p {
-            color: #666;
-            margin-bottom: 10px;
-        }
-        
-        .product-badge {
-            display: inline-block;
-            background: #ffc107;
-            color: #222;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-        
-        /* Features Section */
-        .features {
-            background: #f8f9fa;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-box {
-            text-align: center;
-            padding: 30px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-        
-        .feature-icon {
-            font-size: 3rem;
             margin-bottom: 20px;
         }
         
-        .feature-box h3 {
-            color: #1e7e34;
+        .product-card h3 {
+            font-size: 1.5rem;
             margin-bottom: 15px;
+            color: #1e7e34;
+        }
+        
+        .product-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Info Sections */
+        .info-section {
+            background: #f8f9fa;
+            padding: 60px 20px;
+        }
+        
+        .info-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
         }
         
         /* Testimonials */
-        .testimonial {
+        .testimonials {
+            background: #f8f9fa;
+            padding: 60px 20px;
+        }
+        
+        .testimonial-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Universities Section */
+        .universities {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+        
+        .universities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .uni-card {
             background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-            border-left: 5px solid #28a745;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
         
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-            color: #555;
-            line-height: 1.8;
+        .uni-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(30, 126, 52, 0.15);
+            border-color: #28a745;
         }
         
-        .testimonial-author {
-            font-weight: bold;
+        .uni-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .uni-card h4 {
             color: #1e7e34;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 600;
         }
         
-        .testimonial-role {
+        .uni-card p {
             color: #666;
             font-size: 0.9rem;
         }
         
-        .stars {
-            color: #ffc107;
-            font-size: 1.2rem;
-            margin-top: 10px;
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 40px 20px;
+            background: white;
+            flex-wrap: wrap;
         }
         
-        /* Contact Form */
-        .contact-container {
+        .badge {
+            text-align: center;
+        }
+        
+        .badge img {
+            max-width: 150px;
+            height: auto;
+        }
+        
+        .badge p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #1e7e34;
+        }
+        
+        /* Features Grid */
+        .features-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
             margin-top: 40px;
         }
         
-        .contact-info-box {
+        .feature {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .feature h3 {
+            color: #1e7e34;
+            margin-bottom: 15px;
+        }
+        
+        /* Contact Section */
+        .contact-section {
             background: linear-gradient(135deg, #1e7e34 0%, #28a745 100%);
             color: white;
-            padding: 40px;
-            border-radius: 15px;
+            padding: 60px 20px;
+            text-align: center;
         }
         
-        .contact-info-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-            color: white;
+        .contact-info {
+            margin-top: 30px;
+            font-size: 1.2rem;
         }
         
-        .contact-details {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .contact-item svg {
-            width: 24px;
-            height: 24px;
-            fill: white;
-            flex-shrink: 0;
-        }
-        
-        .contact-item a {
+        .contact-info a {
             color: white;
             text-decoration: none;
-            font-size: 1.1rem;
-        }
-        
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-        
-        .contact-form {
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .contact-form h3 {
-            color: #1e7e34;
-            margin-bottom: 25px;
-            font-size: 1.8rem;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: #333;
-            font-weight: 500;
-        }
-        
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: border-color 0.3s;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #28a745;
-        }
-        
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-        
-        .submit-button {
-            background: linear-gradient(135deg, #1e7e34 0%, #28a745 100%);
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.1rem;
             font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            width: 100%;
-        }
-        
-        .submit-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-        
-        .form-message {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            display: none;
-        }
-        
-        .form-message.success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-        
-        .form-message.error {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
         }
         
         /* Footer */
         footer {
-            background: #222;
+            background: #2c3e50;
             color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 20px;
         }
         
-        footer p {
-            margin-bottom: 10px;
-        }
-        
-        .australian-made {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: white;
-            color: #1e7e34;
-            border-radius: 20px;
-            font-weight: bold;
+        /* Mobile Menu Toggle */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 10px;
         }
         
         /* Responsive */
-        @media (max-width: 968px) {
-            .contact-container {
-                grid-template-columns: 1fr;
-            }
-        }
-        
         @media (max-width: 768px) {
+            /* Navigation */
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1e7e34;
+                flex-direction: column;
+                gap: 0;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                padding: 10px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.1);
+            }
+            
+            nav .container {
+                position: relative;
+            }
+            
+            /* Hero */
+            .hero {
+                padding: 50px 20px;
+            }
+            
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
+                line-height: 1.3;
             }
             
             .hero p {
                 font-size: 1rem;
             }
             
-            .nav-links {
-                flex-direction: column;
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 0.9rem;
+            }
+            
+            /* Section Titles */
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+            
+            /* Container */
+            .container {
+                padding: 40px 15px;
+            }
+            
+            /* Products Grid */
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .product-card {
+                padding: 20px;
+            }
+            
+            .product-card img {
+                height: 250px;
+            }
+            
+            /* Features Grid */
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .feature {
+                padding: 20px;
+            }
+            
+            /* Universities Grid */
+            .universities-grid {
+                grid-template-columns: 1fr;
                 gap: 15px;
             }
             
-            nav .container {
-                flex-direction: column;
+            .uni-card {
+                padding: 20px 15px;
             }
             
-            .products-grid {
-                grid-template-columns: 1fr;
+            .uni-icon {
+                font-size: 2rem;
+            }
+            
+            .uni-card h4 {
+                font-size: 1rem;
+            }
+            
+            /* Trust Badges */
+            .trust-badges {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .badge p {
+                font-size: 0.9rem;
+            }
+            
+            /* Contact */
+            .contact-section {
+                padding: 40px 15px;
+            }
+            
+            .contact-info {
+                font-size: 1rem;
+            }
+            
+            /* Info Section */
+            .info-section {
+                padding: 40px 15px;
+            }
+            
+            .testimonials {
+                padding: 40px 15px;
             }
         }
         
-        .page-section {
-            display: none;
-        }
-        
-        .page-section.active {
-            display: block;
+        /* Tablet Optimization */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .products-grid,
+            .features-grid,
+            .universities-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
         }
     </style>
 </head>
@@ -443,430 +460,332 @@
     <nav>
         <div class="container">
             <div class="logo">Assits LLC</div>
-            <ul class="nav-links">
-                <li><a href="#" onclick="showPage('home')">Home</a></li>
-                <li><a href="#" onclick="showPage('products')">Products</a></li>
-                <li><a href="#" onclick="showPage('about')">About</a></li>
-                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#products" onclick="closeMenu()">Products</a></li>
+                <li><a href="#how-it-works" onclick="closeMenu()">How It Works</a></li>
+                <li><a href="#testimonials" onclick="closeMenu()">Testimonials</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- HOME PAGE -->
-    <div id="home" class="page-section active">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>Vm3 Purifier Distributor</h1>
-                <p>Australian-Made Odor Control & Purification Solutions for Funeral Homes, Mortuaries, and Professional Facilities</p>
-                <a href="#" onclick="showPage('products')" class="cta-button">View Our Products</a>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Professional Odour Control Solutions</h1>
+            <p>Australian-made Vm³ Purifier products - trusted by funeral homes, coroners, hospitals, and universities across Australia and beyond</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
 
-        <!-- Features Section -->
-        <section class="features">
-            <div class="container">
-                <h2>Why Choose Vm3 Purifier?</h2>
-                <div class="features-grid">
-                    <div class="feature-box">
-                        <div class="feature-icon">🌿</div>
-                        <h3>Eliminate Problem Odors</h3>
-                        <p>Effectively removes unwanted odors at the source using natural, safe ingredients</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">💧</div>
-                        <h3>Absorb Fluids</h3>
-                        <p>Superior moisture absorption technology keeps environments clean and dry</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">🛡️</div>
-                        <h3>Reduce Moisture & Mold</h3>
-                        <p>Prevents dampness and mold growth with advanced polymer technology</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">🔬</div>
-                        <h3>Capture Chemical Vapors</h3>
-                        <p>Traps and neutralizes harmful chemical vapors and volatile compounds</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">❤️</div>
-                        <h3>Safer Environment</h3>
-                        <p>Non-toxic, eco-friendly solution for healthier workplaces</p>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">🇦🇺</div>
-                        <h3>Australian Made</h3>
-                        <p>Proudly manufactured to the highest Australian quality standards</p>
-                    </div>
+    <!-- Products Section -->
+    <section id="products" class="container">
+        <h2 class="section-title">Our Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="product-spray.jpg" alt="Vm³ Zero Odour Neutralising Surface Cleaner">
+                <h3>Vm³ Zero Odour Surface Cleaner</h3>
+                <p><strong>500ml Spray Bottle - Best Seller</strong></p>
+                <p>Multi-purpose odour neutralising surface cleaner. Anti-bacterial, controls mould and malodour. Safe for stainless steel and glass.</p>
+                <ul style="text-align: left; margin: 20px;">
+                    <li>✓ Non-toxic & eco-friendly</li>
+                    <li>✓ Kills up to 99.9% of germs</li>
+                    <li>✓ No streaks or residue</li>
+                    <li>✓ Safe for all hard surfaces</li>
+                </ul>
+            </div>
+            
+            <div class="product-card">
+                <img src="product-pads.jpg" alt="Vm³ Zero Odour Eliminator Pads">
+                <h3>Vm³ Zero Odour Eliminator Pads</h3>
+                <p><strong>4 Pads per Pack</strong></p>
+                <p>Mineral-based pads that eliminate household odours, reduce moisture and dampness, and help reduce insects, rats and mice.</p>
+                <ul style="text-align: left; margin: 20px;">
+                    <li>✓ Absorbs fluids & moisture</li>
+                    <li>✓ Reduces mould & mildew</li>
+                    <li>✓ Captures chemical vapors</li>
+                    <li>✓ Lasts 1-3 weeks per application</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="info-section">
+        <div class="container">
+            <h2 class="section-title">What We Do & How It Works</h2>
+            <img src="how-it-works-full.jpg" alt="Vm³ Purifier - What We Do and How It Works">
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>Eliminate Problem Odors</h3>
+                    <p>Neutralises odours at the molecular level, not just masking them</p>
+                </div>
+                <div class="feature">
+                    <h3>Absorb Fluids</h3>
+                    <p>Pads hold up to 1485% their weight in moisture - 33x better than silica gel</p>
+                </div>
+                <div class="feature">
+                    <h3>Reduce Moisture & Mold</h3>
+                    <p>Controls dampness and prevents mould growth</p>
+                </div>
+                <div class="feature">
+                    <h3>Capture Chemical Vapors</h3>
+                    <p>Traps and removes volatile compounds from the air</p>
+                </div>
+                <div class="feature">
+                    <h3>Safer Workplace</h3>
+                    <p>Creates healthier environments for everyone</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Testimonials Section -->
-        <section>
-            <div class="container">
-                <h2>What Our Customers Say</h2>
+    <!-- Applications Section -->
+    <section class="container">
+        <h2 class="section-title">Where to Use Vm³ Products</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>🏛️ Funeral Homes</h3>
+                <p>Pre-embalming odour control, post-embalming corrosion prevention</p>
+            </div>
+            <div class="feature">
+                <h3>👣 Coroners</h3>
+                <p>Odour control and fluid absorption</p>
+            </div>
+            <div class="feature">
+                <h3>🚑 Mortuaries</h3>
+                <p>Long-term storage odour management</p>
+            </div>
+            <div class="feature">
+                <h3>🔬 Anatomy Labs</h3>
+                <p>Formaldehyde odour reduction</p>
+            </div>
+            <div class="feature">
+                <h3>⚰️ Coffins & Transport</h3>
+                <p>Repatriation and long-distance transportation</p>
+            </div>
+            <div class="feature">
+                <h3>🏠 And More!</h3>
+                <p>Refrigerators, waste bins, vehicles, pet odours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badge Section -->
+    <section class="trust-badges">
+        <div class="badge">
+            <img src="australian-made.jpg" alt="Australian Made and Owned">
+            <p>Proudly Australian<br>Made and Owned</p>
+        </div>
+        <div class="badge">
+            <p style="font-size: 1.5rem; color: #1e7e34;"><strong>1485%</strong><br>Moisture Absorption<br>vs 45% Silica Gel</p>
+        </div>
+        <div class="badge">
+            <p style="font-size: 1.5rem; color: #1e7e34;"><strong>Non-Toxic</strong><br>Eco-Friendly<br>Safe for All Spaces</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <img src="testimonials.jpg" alt="Customer Testimonials" class="testimonial-image">
+            
+            <div style="margin-top: 40px; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <h3 style="color: #1e7e34;">Salford Park Aged Care - Victoria</h3>
+                <p style="font-style: italic; margin: 20px 0;">"Salford Aged Care are saving about $3500 a year compared to auto sprayers in the first year and in the second year saving of $4500 as pad holders are a 1 off purchase. The maintenance manager has also saved on time management, to replace cartridges and batteries in auto sprayer was taking 8hrs compared with now 1.5 hours to replace the pads in pad holders."</p>
+                <p style="font-style: italic; margin: 20px 0;">"The odour pads 'keep on keeping on' 50% longer than the spray units we had been using. No doubt you can recall the urine smell problem we had in one particular room – no matter what we tried the odour always returned within days. One pad placed on the front of the air conditioner totally eliminated the smell within 8 hours - and the room has remained odour free since then."</p>
+                <p><strong>- Paul Mann, The Odour Control Man</strong></p>
+            </div>
+
+            <div style="margin-top: 40px; padding: 30px; background: white; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <h3 style="color: #1e7e34;">Stratton Finance - Port Melbourne</h3>
+                <p style="font-style: italic; margin: 20px 0;">"I run an office of 135 staff and in winter the sickness rate is very high. To reliably test the effectiveness I put the pods around the first level only and not the ground floor. They effectively reduced illness by 50% …….one word INCREDIBLE."</p>
+                <p style="font-style: italic; margin: 20px 0;">"A product that gives 100% WOW factor to any work place, school or home."</p>
+                <p><strong>- Bernice Coghlan, Stratton Finance</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Universities Section -->
+    <section id="research" class="universities">
+        <div class="container">
+            <h2 class="section-title">Trusted by Leading Institutions</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 50px; color: #666;">Vm³ products are successfully used by 15+ universities and research facilities across Australia and New Zealand</p>
+            
+            <div class="universities-grid">
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>The University of Adelaide</h4>
+                    <p>South Australia</p>
+                </div>
                 
-                <div class="testimonial">
-                    <p class="testimonial-text">"Control of malodour and fumes has always been a challenge in the funeral and health industries. Vm3 PUREFIER is a very welcome development—effective, easy, and pleasant to use. It gets to the source of odors, helps with sanitation and moisture absorption, and is made for safety and environmental friendliness. After nearly 30 years in the industry, I believe these are the best odor control products I've found."</p>
-                    <div class="testimonial-author">Peter Edwards</div>
-                    <div class="testimonial-role">Mortuary Manager, Harrison Funerals, Adelaide<br>Member of the Australian Institute of Embalming</div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>The University of South Australia</h4>
+                    <p>South Australia</p>
                 </div>
-
-                <div class="testimonial">
-                    <p class="testimonial-text">"At this point I also have to thank Stuart Godwin for supplying us with his miracle product Vm3. If you have not tried this odor containment/neutralizing product do so very soon. You won't regret it. The odor was so strong it was evident a distance away from the police station in the business district of the local community. We started putting Vm3 pouches all around the station and the police were thrilled with how efficient they were in neutralizing the odor. Three days after we had completed all the cases for transport, the container was opened and there was zero odor."</p>
-                    <div class="testimonial-author">Alex Nelson J.P MBIE MAIE</div>
-                    <div class="testimonial-role">Master Funeral Director (AFDA)<br>BIE Australasian Division</div>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- PRODUCTS PAGE -->
-    <div id="products" class="page-section">
-        <section>
-            <div class="container">
-                <h2>Our Product Range</h2>
-                <div class="products-grid">
-                    <div class="product-card">
-                        <div class="product-image">
-                            <svg width="200" height="300" viewBox="0 0 200 300">
-                                <!-- Spray Bottle -->
-                                <rect x="70" y="40" width="60" height="20" fill="#ddd" rx="3"/>
-                                <rect x="75" y="30" width="50" height="15" fill="#aaa"/>
-                                <rect x="95" y="20" width="10" height="15" fill="#999"/>
-                                <path d="M 60 60 Q 60 50 70 50 L 130 50 Q 140 50 140 60 L 140 250 Q 140 260 130 260 L 70 260 Q 60 260 60 250 Z" fill="white" stroke="#ccc" stroke-width="2"/>
-                                <!-- Label -->
-                                <ellipse cx="100" cy="150" rx="35" ry="50" fill="#1e56a0"/>
-                                <ellipse cx="100" cy="180" rx="30" ry="30" fill="#4CAF50"/>
-                                <text x="100" y="125" font-family="Arial" font-size="10" fill="white" text-anchor="middle" font-weight="bold">Vm³</text>
-                                <text x="100" y="150" font-family="Arial" font-size="8" fill="white" text-anchor="middle">ZERO</text>
-                                <text x="100" y="165" font-family="Arial" font-size="7" fill="white" text-anchor="middle">ODOUR</text>
-                                <text x="100" y="190" font-family="Arial" font-size="6" fill="white" text-anchor="middle">CLEANER</text>
-                            </svg>
-                        </div>
-                        <div class="product-info">
-                            <div class="product-badge">BEST SELLER</div>
-                            <h3>Vm3 Zero Odour Surface Cleaner</h3>
-                            <p><strong>Multi-Purpose Odor Neutralising Surface Cleaner</strong></p>
-                            <p>✓ Anti Bacterial</p>
-                            <p>✓ Controls Mould and Malodour</p>
-                            <p>✓ Stainless Steel & Glass Cleaner</p>
-                            <p>✓ Kills up to 99.9% of germs</p>
-                            <p>✓ Non-toxic & eco friendly</p>
-                            <p>✓ Safe for all spaces</p>
-                            <p><strong>Available in: 500ml</strong></p>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <svg width="200" height="300" viewBox="0 0 200 300">
-                                <!-- Package -->
-                                <path d="M 50 80 L 50 260 Q 50 270 60 270 L 140 270 Q 150 270 150 260 L 150 80 Q 150 70 140 70 L 60 70 Q 50 70 50 80 Z" fill="#1e56a0"/>
-                                <path d="M 50 80 Q 50 90 60 90 L 140 90 Q 150 90 150 80" fill="#1a4d8f"/>
-                                <!-- Label -->
-                                <text x="100" y="110" font-family="Arial" font-size="12" fill="#4CAF50" text-anchor="middle" font-weight="bold">Vm³</text>
-                                <text x="100" y="135" font-family="Arial" font-size="14" fill="white" text-anchor="middle" font-weight="bold">ZERO</text>
-                                <circle cx="130" cy="135" r="8" fill="#4CAF50"/>
-                                <text x="100" y="155" font-family="Arial" font-size="8" fill="#4CAF50" text-anchor="middle">ODOUR ELIMINATOR</text>
-                                <text x="100" y="167" font-family="Arial" font-size="8" fill="#4CAF50" text-anchor="middle">PADS</text>
-                                <!-- Icons -->
-                                <rect x="60" y="180" width="25" height="25" fill="#4CAF50" opacity="0.3" rx="3"/>
-                                <rect x="90" y="180" width="25" height="25" fill="#4CAF50" opacity="0.3" rx="3"/>
-                                <rect x="120" y="180" width="25" height="25" fill="#4CAF50" opacity="0.3" rx="3"/>
-                                <text x="100" y="225" font-family="Arial" font-size="7" fill="white" text-anchor="middle">4 PADS</text>
-                                <text x="100" y="245" font-family="Arial" font-size="6" fill="white" text-anchor="middle">www.vm3zero.com</text>
-                            </svg>
-                        </div>
-                        <div class="product-info">
-                            <h3>Vm3 Zero Odour Eliminator Pads</h3>
-                            <p><strong>Professional Odour Control Solution</strong></p>
-                            <p>✓ Eliminates household problem odors</p>
-                            <p>✓ Reduces moisture & dampness</p>
-                            <p>✓ Reduces presence of insects, rats and mice</p>
-                            <p>✓ Reduces odours from mildew and mould</p>
-                            <p>✓ Each pack contains 4 pads</p>
-                            <p>✓ Can be cut into smaller sizes</p>
-                            <p><strong>Perfect for: Funeral Homes, Coroners, Mortuaries, Anatomy Labs, Coffins, Transport Vehicles</strong></p>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image">
-                            <svg width="200" height="300" viewBox="0 0 200 300">
-                                <!-- Info Graphic -->
-                                <circle cx="100" cy="80" r="30" fill="#4CAF50" opacity="0.2"/>
-                                <text x="100" y="90" font-family="Arial" font-size="36" text-anchor="middle">1</text>
-                                <circle cx="100" cy="160" r="30" fill="#1e56a0" opacity="0.2"/>
-                                <text x="100" y="170" font-family="Arial" font-size="36" text-anchor="middle">2</text>
-                                <circle cx="100" cy="240" r="30" fill="#4CAF50" opacity="0.2"/>
-                                <text x="100" y="250" font-family="Arial" font-size="36" text-anchor="middle">3</text>
-                                <path d="M 100 110 L 100 130" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <path d="M 100 190 L 100 210" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <defs>
-                                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
-                                        <polygon points="0 0, 10 5, 0 10" fill="#666"/>
-                                    </marker>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="product-info">
-                            <h3>How Vm3 Purifier Works</h3>
-                            <p><strong>Step 1:</strong> Vm3 Purifier Pads & Powders attract and hold moisture, eliminating volatiles, moisture, malodor and microbes.</p>
-                            <p><strong>Step 2:</strong> Vm3 Purifier releases a proprietary Odor Neutralising Complex (ONC) which kills mold using natural essential oils.</p>
-                            <p><strong>Step 3:</strong> The ONC traps and removes malodor, microbes, volatiles and moisture on contact in the air and on surfaces.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Application Guide -->
-        <section class="features">
-            <div class="container">
-                <h2>Where to Use Vm3 Products</h2>
-                <div class="features-grid">
-                    <div class="feature-box">
-                        <div class="feature-icon">🏛️</div>
-                        <h3>Funeral Homes</h3>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">⚖️</div>
-                        <h3>Coroners</h3>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">🏥</div>
-                        <h3>Mortuaries</h3>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">🔬</div>
-                        <h3>Anatomy Labs</h3>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">⚰️</div>
-                        <h3>Coffins</h3>
-                    </div>
-                    <div class="feature-box">
-                        <div class="feature-icon">🚐</div>
-                        <h3>Transport Vehicles</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- ABOUT PAGE -->
-    <div id="about" class="page-section">
-        <section>
-            <div class="container">
-                <h2>About Assits LLC</h2>
-                <p style="max-width: 800px; margin: 0 auto 40px; text-align: center; font-size: 1.2rem; line-height: 1.8;">
-                    Assits LLC is the proud North American distributor of Vm3 Purifier products, bringing Australian-made quality and innovation to funeral homes, mortuaries, and professional facilities across the United States.
-                </p>
                 
-                <div style="margin-top: 60px;">
-                    <h3 style="text-align: center; color: #1e7e34; margin-bottom: 30px;">Australian Made & Owned</h3>
-                    <p style="max-width: 800px; margin: 0 auto 20px; text-align: center; line-height: 1.8;">
-                        Vm3 Purifier Pads are proudly Australian-made, ensuring high quality, durability, and eco-friendly materials. By choosing an Australian-made product, you're benefiting from superior odor and chemical vapor technology, manufactured to the highest Australian quality standards.
-                    </p>
+                <div class="uni-card">
+                    <div class="uni-icon">🔬</div>
+                    <h4>SA Forensic Science</h4>
+                    <p>South Australia</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>The University of Sydney</h4>
+                    <p>New South Wales</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>Charles Sturt University</h4>
+                    <p>New South Wales</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>Canberra Institute of Technology</h4>
+                    <p>Australian Capital Territory</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>James Cook University</h4>
+                    <p>Queensland</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>The University of Otago</h4>
+                    <p>New Zealand</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🏥</div>
+                    <h4>Queensland Health</h4>
+                    <p>Queensland</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🔬</div>
+                    <h4>The Garvan Institute</h4>
+                    <p>New South Wales</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>The University of Queensland</h4>
+                    <p>Queensland</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>The University of Western Australia</h4>
+                    <p>Western Australia</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>Curtin University</h4>
+                    <p>Western Australia</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>Murdoch University</h4>
+                    <p>Western Australia</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🏥</div>
+                    <h4>Royal Alfred Hospital</h4>
+                    <p>Adelaide</p>
+                </div>
+                
+                <div class="uni-card">
+                    <div class="uni-icon">🎓</div>
+                    <h4>The University of Wollongong</h4>
+                    <p>New South Wales</p>
                 </div>
             </div>
-        </section>
+            
+            <div style="text-align: center; margin-top: 50px; padding: 30px; background: linear-gradient(135deg, #1e7e34 0%, #28a745 100%); border-radius: 15px; color: white;">
+                <h3 style="font-size: 2rem; margin-bottom: 15px;">Join These Leading Institutions</h3>
+                <p style="font-size: 1.2rem;">Discover why top universities and research facilities trust Vm³ Purifier for their odour control needs</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="features">
-            <div class="container">
-                <h2>Our Commitment</h2>
-                <div class="features-grid">
-                    <div class="feature-box">
-                        <h3>Quality</h3>
-                        <p>Highest Australian manufacturing standards</p>
-                    </div>
-                    <div class="feature-box">
-                        <h3>Innovation</h3>
-                        <p>Cutting-edge odor control technology</p>
-                    </div>
-                    <div class="feature-box">
-                        <h3>Safety</h3>
-                        <p>Non-toxic, eco-friendly solutions</p>
-                    </div>
-                    <div class="feature-box">
-                        <h3>Support</h3>
-                        <p>Dedicated customer service</p>
-                    </div>
+    <!-- Lab Testing Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2 class="section-title">Scientifically Tested & Proven</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>✓ Laboratory Tested</h3>
+                    <p>Bell Laboratories - Moisture capacity 1485% (33x better than silica gel at 45%)</p>
+                </div>
+                <div class="feature">
+                    <h3>✓ Preservative Efficacy</h3>
+                    <p>EML Consulting - Passed USPXXIII-NF18 Supplement 8 testing</p>
+                </div>
+                <div class="feature">
+                    <h3>✓ Human Health Assessment</h3>
+                    <p>Toxikos - Confirmed safe for normal use</p>
+                </div>
+                <div class="feature">
+                    <h3>✓ Non-Hazardous</h3>
+                    <p>Classified as non-hazardous according to NOHSC Australia</p>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <!-- CONTACT PAGE -->
-    <div id="contact" class="page-section">
-        <section>
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <div class="contact-container">
-                    <!-- Contact Info -->
-                    <div class="contact-info-box">
-                        <h3>Contact Information</h3>
-                        <p style="margin-bottom: 30px;">For inquiries about Vm3 Purifier products and distribution</p>
-                        
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                                </svg>
-                                <div>
-                                    <strong>Phone</strong><br>
-                                    <a href="tel:2032476870">(203) 247-6870</a><br>
-                                    <a href="tel:9142551401">(914) 255-1401</a>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                </svg>
-                                <div>
-                                    <strong>Location</strong><br>
-                                    New York, NY<br>
-                                    North America
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
-                                </svg>
-                                <div>
-                                    <strong>Business Hours</strong><br>
-                                    Mon-Fri: 9AM - 5PM EST<br>
-                                    Sat-Sun: Closed
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="contact-form">
-                        <h3>Send Us a Message</h3>
-                        <form id="contactForm" onsubmit="handleSubmit(event)">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="company">Company/Organization</label>
-                                <input type="text" id="company" name="company">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="product-inquiry">Product Inquiry</option>
-                                    <option value="order">Place an Order</option>
-                                    <option value="distribution">Distribution Partnership</option>
-                                    <option value="support">Customer Support</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="submit-button">Send Message</button>
-                            
-                            <div id="formMessage" class="form-message"></div>
-                        </form>
-                    </div>
-                </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Ready to Experience the Difference?</h2>
+            <p>Contact Assits LLC today for professional odour control solutions</p>
+            <div class="contact-info">
+                <p><strong>Enos Dompreh</strong></p>
+                <p>📧 <a href="mailto:enosjunior88@gmail.com">enosjunior88@gmail.com</a></p>
+                <p>📱 Contact us for more information</p>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Assits LLC. All rights reserved.</p>
-            <p>North American Distributor of Vm3 Purifier Products</p>
-            <div class="australian-made">🇦🇺 Australian Made & Owned</div>
-        </div>
+        <p>&copy; 2025 Assits LLC - Authorized Vm³ Purifier Distributor. All rights reserved.</p>
+        <p>Vm³ Purifier - Australian Made and Owned</p>
     </footer>
 
     <script>
-        function showPage(pageId) {
-            const pages = document.querySelectorAll('.page-section');
-            pages.forEach(page => page.classList.remove('active'));
-            
-            document.getElementById(pageId).classList.add('active');
-            
-            window.scrollTo(0, 0);
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
         }
         
-        function handleSubmit(event) {
-            event.preventDefault();
-            
-            const form = event.target;
-            const formData = new FormData(form);
-            const messageDiv = document.getElementById('formMessage');
-            
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const phone = formData.get('phone');
-            const company = formData.get('company');
-            const subject = formData.get('subject');
-            const message = formData.get('message');
-            
-            const emailBody = `
-Name: ${name}
-Email: ${email}
-Phone: ${phone || 'Not provided'}
-Company: ${company || 'Not provided'}
-Subject: ${subject}
-
-Message:
-${message}
-            `.trim();
-            
-            const mailtoLink = `mailto:eatito1@me.com?subject=Contact Form: ${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-            
-            window.location.href = mailtoLink;
-            
-            messageDiv.className = 'form-message success';
-            messageDiv.textContent = 'Thank you for your message! Your email client should open. If not, please email us directly at eatito1@me.com';
-            messageDiv.style.display = 'block';
-            
-            form.reset();
-            
-            setTimeout(() => {
-                messageDiv.style.display = 'none';
-            }, 8000);
+        function closeMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.remove('active');
         }
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const nav = document.querySelector('nav');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.getElementById('navLinks');
+            
+            if (!nav.contains(event.target) && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
     </script>
 </body>
-</html>">
-                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                </svg>
-                                <div>
-                                    <strong>Email</strong><br>
-                                    <a href="mailto:eatito1@me.com">eatito1@me.com</a>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24
+</html>
