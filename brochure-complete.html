@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assits LLC - Vm³ Purifier Complete Product Brochure</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background: white;
+            color: #333;
+        }
+        
+        /* Each Page */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            page-break-after: always;
+            position: relative;
+        }
+        
+        .page:last-child {
+            page-break-after: auto;
+        }
+        
+        /* Header - 8% */
+        .header {
+            height: 8%;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+        
+        .header .company-info h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a90e2;
+            margin-bottom: 3px;
+        }
+        
+        .header .company-info p {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        
+        .header .tagline {
+            text-align: right;
+            font-size: 14px;
+        }
+        
+        .header .tagline .highlight {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        /* Main Content - 84% */
+        .main-content {
+            height: 84%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #f8f9fa;
+        }
+        
+        .main-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        /* Footer - 8% */
+        .footer {
+            height: 8%;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+        
+        .footer .left-section {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer .company-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #4a90e2;
+            margin-bottom: 3px;
+        }
+        
+        .footer .distributor-text {
+            font-size: 11px;
+            opacity: 0.9;
+        }
+        
+        .footer .contact-section {
+            text-align: right;
+        }
+        
+        .footer .contact-line {
+            font-size: 11px;
+            margin: 2px 0;
+        }
+        
+        .footer .contact-line strong {
+            color: #4a90e2;
+        }
+        
+        .footer .page-number {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 10px;
+            color: rgba(255,255,255,0.6);
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .page {
+                margin: 0;
+                page-break-after: always;
+            }
+            
+            .header, .footer {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1: Product Guide Cover -->
+    <div class="page">
+        <div class="header">
+            <div class="company-info">
+                <h1>Assits LLC</h1>
+                <p>Authorized Vm³ Purifier Distributor</p>
+            </div>
+            <div class="tagline">
+                <p><span class="highlight">North America</span></p>
+                <p>USA & Canada</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="images/vm3-product-guide-cover.svg" alt="Vm³ Purifier Product Guide">
+        </div>
+        <div class="footer">
+            <div class="left-section">
+                <div class="company-name">Assits LLC</div>
+                <div class="distributor-text">Your Trusted North America Distributor</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-line"><strong>Contact:</strong> Enos Atito</div>
+                <div class="contact-line"><strong>Phone:</strong> (203) 247-6870 or (914) 255-1401</div>
+                <div class="contact-line"><strong>Email:</strong> eatito1@me.com | <strong>Web:</strong> www.assitsnow.com</div>
+            </div>
+            <div class="page-number">Page 1 of 9</div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: What We Do / How It Works -->
+    <div class="page">
+        <div class="header">
+            <div class="company-info">
+                <h1>Assits LLC</h1>
+                <p>Authorized Vm³ Purifier Distributor</p>
+            </div>
+            <div class="tagline">
+                <p><span class="highlight">North America</span></p>
+                <p>USA & Canada</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="images/vm3-what-we-do.svg" alt="What We Do and How It Works">
+        </div>
+        <div class="footer">
+            <div class="left-section">
+                <div class="company-name">Assits LLC</div>
+                <div class="distributor-text">Your Trusted North America Distributor</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-line"><strong>Contact:</strong> Enos Atito</div>
+                <div class="contact-line"><strong>Phone:</strong> (203) 247-6870 or (914) 255-1401</div>
+                <div class="contact-line"><strong>Email:</strong> eatito1@me.com | <strong>Web:</strong> www.assitsnow.com</div>
+            </div>
+            <div class="page-number">Page 2 of 9</div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: Our Products - BFCC & Mini Mat -->
+    <div class="page">
+        <div class="header">
+            <div class="company-info">
+                <h1>Assits LLC</h1>
+                <p>Authorized Vm³ Purifier Distributor</p>
+            </div>
+            <div class="tagline">
+                <p><span class="highlight">North America</span></p>
+                <p>USA & Canada</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="images/vm3-products-bfcc-minimat.svg" alt="BFCC and Funeral Mini Mat Products">
+        </div>
+        <div class="footer">
+            <div class="left-section">
+                <div class="company-name">Assits LLC</div>
+                <div class="distributor-text">Your Trusted North America Distributor</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-line"><strong>Contact:</strong> Enos Atito</div>
+                <div class="contact-line"><strong>Phone:</strong> (203) 247-6870 or (914) 255-1401</div>
+                <div class="contact-line"><strong>Email:</strong> eatito1@me.com | <strong>Web:</strong> www.assitsnow.com</div>
+            </div>
+            <div class="page-number">Page 3 of 9</div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: Funeral Mat Set & Odor Control Pads -->
+    <div class="page">
+        <div class="header">
+            <div class="company-info">
+                <h1>Assits LLC</h1>
+                <p>Authorized Vm³ Purifier Distributor</p>
+            </div>
+            <div class="tagline">
+                <p><span class="highlight">North America</span></p>
+                <p>USA & Canada</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="images/vm3-funeral-mats-pads.svg" alt="Funeral Mat Set and Odor Control Pads">
+        </div>
+        <div class="footer">
+            <div class="left-section">
+                <div class="company-name">Assits LLC</div>
+                <div class="distributor-text">Your Trusted North America Distributor</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-line"><strong>Contact:</strong> Enos Atito</div>
+                <div class="contact-line"><strong>Phone:</strong> (203) 247-6870 or (914) 255-1401</div>
+                <div class="contact-line"><strong>Email:</strong> eatito1@me.com | <strong>Web:</strong> www.assitsnow.com</div>
+            </div>
+            <div class="page-number">Page 4 of 9</div>
+        </div>
+    </div>
+
+    <!-- PAGE 5: Surface Cleaner & FAQ -->
+    <div class="page">
+        <div class="header">
+            <div class="company-info">
+                <h1>Assits LLC</h1>
+                <p>Authorized Vm³ Purifier Distributor</p>
+            </div>
+            <div class="tagline">
+                <p><span class="highlight">North America</span></p>
+                <p>USA & Canada</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="images/vm3-surface-cleaner-faq.svg" alt="Surface Cleaner and FAQ">
+        </div>
+        <div class="footer">
+            <div class="left-section">
+                <div class="company-name">Assits LLC</div>
+                <div class="distributor-text">Your Trusted North America Distributor</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-line"><strong>Contact:</strong> Enos Atito</div>
+                <div class="contact-line"><strong>Phone:</strong> (203) 247-6870 or (914) 255-1401</div>
+                <div class="contact-line"><strong>Email:</strong> eatito1@me.com | <strong>Web:</strong> www.assitsnow.com</div>
+            </div>
+            <div class="page-number">Page 5 of 9</div>
+        </div>
+    </div>
+
+    <!-- PAGE 6: Application Guide -->
+    <div class="page">
+        <div class="header">
+            <div class="company-info">
+                <h1>Assits LLC</h1>
+                <p>Authorized Vm³ Purifier Distributor</p>
+            </div>
+            <div class="tagline">
+                <p><span class="highlight">North America</span></p>
+                <p>USA & Canada</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="images/vm3-application-guide.svg" alt="Application Guide">
+        </div>
+        <div class="footer">
+            <div class="left-section">
+                <div class="company-name">Assits LLC</div>
+                <div class="distributor-text">Your Trusted North America Distributor</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-line"><strong>Contact:</strong> Enos Atito</div>
+                <div class="contact-line"><strong>Phone:</strong> (203) 247-6870 or (914) 255-1401</div>
+                <div class="contact-line"><strong>Email:</strong> eatito1@me.com | <strong>Web:</strong> www.assitsnow.com</div>
+            </div>
+            <div class="page-number">Page 6 of 9</div>
+        </div>
+    </div>
+
+    <!-- PAGE 7: Customer Testimonials -->
+    <div class="page">
+        <div class="header">
+            <div class="company-info">
+                <h1>Assits LLC</h1>
+                <p>Authorized Vm³ Purifier Distributor</p>
+            </div>
+            <div class="tagline">
+                <p><span class="highlight">North America</span></p>
+                <p>USA & Canada</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="images/vm3-testimonials.svg" alt="Customer Testimonials">
+        </div>
+        <div class="footer">
+            <div class="left-section">
+                <div class="company-name">Assits LLC</div>
+                <div class="distributor-text">Your Trusted North America Distributor</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-line"><strong>Contact:</strong> Enos Atito</div>
+                <div class="contact-line"><strong>Phone:</strong> (203) 247-6870 or (914) 255-1401</div>
+                <div class="contact-line"><strong>Email:</strong> eatito1@me.com | <strong>Web:</strong> www.assitsnow.com</div>
+            </div>
+            <div class="page-number">Page 7 of 9</div>
+        </div>
+    </div>
+
+    <!-- PAGE 8: Crisis Story & Contact -->
+    <div class="page">
+        <div class="header">
+            <div class="company-info">
+                <h1>Assits LLC</h1>
+                <p>Authorized Vm³ Purifier Distributor</p>
+            </div>
+            <div class="tagline">
+                <p><span class="highlight">North America</span></p>
+                <p>USA & Canada</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="images/vm3-crisis-story-contact.svg" alt="Crisis Story and Contact Information">
+        </div>
+        <div class="footer">
+            <div class="left-section">
+                <div class="company-name">Assits LLC</div>
+                <div class="distributor-text">Your Trusted North America Distributor</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-line"><strong>Contact:</strong> Enos Atito</div>
+                <div class="contact-line"><strong>Phone:</strong> (203) 247-6870 or (914) 255-1401</div>
+                <div class="contact-line"><strong>Email:</strong> eatito1@me.com | <strong>Web:</strong> www.assitsnow.com</div>
+            </div>
+            <div class="page-number">Page 8 of 9</div>
+        </div>
+    </div>
+
+    <!-- PAGE 9: Australian Made -->
+    <div class="page">
+        <div class="header">
+            <div class="company-info">
+                <h1>Assits LLC</h1>
+                <p>Authorized Vm³ Purifier Distributor</p>
+            </div>
+            <div class="tagline">
+                <p><span class="highlight">North America</span></p>
+                <p>USA & Canada</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <img src="images/vm3-australian-made-photo.svg" alt="Proudly Australian Made and Owned">
+        </div>
+        <div class="footer">
+            <div class="left-section">
+                <div class="company-name">Assits LLC</div>
+                <div class="distributor-text">Your Trusted North America Distributor</div>
+            </div>
+            <div class="contact-section">
+                <div class="contact-line"><strong>Contact:</strong> Enos Atito</div>
+                <div class="contact-line"><strong>Phone:</strong> (203) 247-6870 or (914) 255-1401</div>
+                <div class="contact-line"><strong>Email:</strong> eatito1@me.com | <strong>Web:</strong> www.assitsnow.com</div>
+            </div>
+            <div class="page-number">Page 9 of 9</div>
+        </div>
+    </div>
+</body>
+</html>
